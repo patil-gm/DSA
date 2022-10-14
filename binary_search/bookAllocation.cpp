@@ -10,6 +10,9 @@
 #include<vector>
 using namespace std;
 
+// m => no of students (divisions/Partitions of array )
+// n => no of elemets in given array
+
 bool isPossible(vector<int> arr, int n, int m, int mid) {
     int studentCount = 1;
     int pageSum = 0;
