@@ -9,6 +9,10 @@ The remaining subarray was unsorted.
 In every iteration of the selection sort, the minimum element (considering ascending order) 
 from the unsorted subarray is picked and moved to the sorted subarray. 
 
+time complexity both best & worst => O(n^2);
+space = O(1);
+usecase = when array size is small;
+
 */
 
 
