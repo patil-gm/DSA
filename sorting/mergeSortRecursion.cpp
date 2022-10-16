@@ -87,11 +87,12 @@ void merge(int *arr, int s, int e) {
 void mergeSort(int *arr, int s, int e) {
 
     //base case
-    if(s >= e) {
+    if(s > e) {
         return;
     }
     
     int mid = (s+e)/2;
+//     more optimised s+(e-s)/2; to avoid overflow conditions;
 
     //left part sort karna h 
     mergeSort(arr, s, mid);
