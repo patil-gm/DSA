@@ -47,7 +47,7 @@ int allocateBooks(vector<int> arr, int n, int m) {
     }
     int e = sum;
     int ans = -1;
-    int mid = s + (e-s)/2;
+    int mid = (s+e)/2;
     
     while(s<=e)
     {
@@ -60,7 +60,7 @@ int allocateBooks(vector<int> arr, int n, int m) {
         {
             s = mid + 1;
         }
-        mid = s + (e-s)/2;
+        mid = (e+s)/2;
     }
     return ans;
 }
