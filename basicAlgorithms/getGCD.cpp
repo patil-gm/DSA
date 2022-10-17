@@ -1,4 +1,30 @@
 //patil_gm 🚀🔥
+
+
+int getgcd(int a,int b){
+    
+    if(a==0)return b;
+    if(b==0)return a;
+
+    while(a!=b){
+        if(a>b)a-=b;
+        else b-=a;
+    }
+
+    return a;
+}
+
+
+signed main(){
+    fastio
+    int a,b;
+    cin>>a>>b;
+    int gcd= getgcd(a,b);
+    cout<<gcd<<endl;
+    return 0; 
+}
+
+// add this code before the above code
 #include<map>
 #include<vector>
 #include<iostream>
@@ -24,27 +50,3 @@ using namespace std;
 const long long INF=1e18;
 const int32_t mod=1e9+7;
 const int32_t MM=998244353;
-
-
-int getgcd(int a,int b){
-    
-    if(a==0)return b;
-    if(b==0)return a;
-
-    while(a!=b){
-        if(a>b)a-=b;
-        else b-=a;
-    }
-
-    return a;
-}
-
-
-signed main(){
-    fastio
-    int a,b;
-    cin>>a>>b;
-    int gcd= getgcd(a,b);
-    cout<<gcd<<endl;
-    return 0; 
-}
