@@ -16,9 +16,9 @@ then rearrange the elements such that the all left are smaller and right one are
 3.while(arr[j] > pivot) j++;
 4.if(i < pivotIndex && j > pivotIndex)  swap(arr[i++], arr[j--]);
 
-
-time complexity : O(nlogn)
-space complexity : O(1)
+time complexity avg/best : O(nlogn)
+worst case : O(n^2)
+space complexity : O(n)
 
 */
 
