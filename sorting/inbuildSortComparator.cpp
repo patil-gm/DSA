@@ -1,6 +1,8 @@
 // the comparotor function given beloq is for the sorting vector<pair <int,string>>
 // the compator function should always be static i.e. should not be involved in any class we have declare it globally
 
+// if we have to swap the value i.e. they are not sorted then return false 
+// if the values are already sorted then return true
 
 bool cmp (pair<int, string> a, pair<int, string> b) {
 //   patil_gm
