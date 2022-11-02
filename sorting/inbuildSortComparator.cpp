@@ -4,6 +4,11 @@
 // if we have to swap the value i.e. they are not sorted then return false 
 // if the values are already sorted then return true
 
+
+// sorting function to sort even first and odd later 
+ sort(arr.begin(), arr.end(), [](int x, int y) {return x % 2 < y % 2;});
+
+
 bool cmp (pair<int, string> a, pair<int, string> b) {
 //   patil_gm
         if(a.first == b.first)
