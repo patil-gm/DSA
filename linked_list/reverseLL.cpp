@@ -26,3 +26,16 @@ public:
         
     }
 };
+
+
+// Function to reverse a given Linked List using Recursion
+Node* reverseList(Node* head)
+{
+    if (head->next == NULL)
+        return head;
+    Node* rest = reverseList(head->next);
+    head->next->next = head;
+    head->next = NULL;
+    return rest;
+}
+
